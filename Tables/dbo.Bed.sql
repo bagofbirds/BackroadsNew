@@ -1,0 +1,9 @@
+CREATE TABLE [dbo].[Bed]
+(
+[BedID] [int] NOT NULL IDENTITY(1, 1),
+[BedName] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[Note] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Bed] ADD CONSTRAINT [PK_Bed] PRIMARY KEY CLUSTERED  ([BedID]) ON [PRIMARY]
+GO
