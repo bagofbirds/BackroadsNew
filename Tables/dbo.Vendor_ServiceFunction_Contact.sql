@@ -1,7 +1,7 @@
 CREATE TABLE [dbo].[Vendor_ServiceFunction_Contact]
 (
 [Vendor_ServiceFunction_ContactID] [int] NOT NULL IDENTITY(1, 1),
-[ServiceID] [int] NOT NULL,
+[ServiceID] [int] NULL,
 [VendorID] [int] NOT NULL,
 [ServiceFunctionID] [int] NOT NULL,
 [ContactID] [int] NOT NULL

@@ -1,7 +1,8 @@
 CREATE TABLE [dbo].[TCar]
 (
 [TCarID] [int] NOT NULL IDENTITY(1, 1),
-[TCarName] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
+[TCarName] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[note] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[TCar] ADD CONSTRAINT [PK_TCar] PRIMARY KEY CLUSTERED  ([TCarID]) ON [PRIMARY]
